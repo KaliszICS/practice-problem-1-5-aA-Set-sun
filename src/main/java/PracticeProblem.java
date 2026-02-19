@@ -2,7 +2,7 @@
 	 File: Lesson 1.5: Characters
 	 Author: Angie
 	 Date Created: February 18, 2026
-	 Date Last Modified: February 18, 2026
+	 Date Last Modified: February 19, 2026
 	*/
 
 	import java.util.Scanner;
@@ -35,7 +35,7 @@ public class PracticeProblem {
 
 		Scanner input = new Scanner(System.in);
 		
-		char letter; 
+		char b; 
 		String word;
 		
 
@@ -44,10 +44,10 @@ public class PracticeProblem {
 		//word
 		//0123 (REMEMBER IT STARTS AT 0)
 
-		letter = word.charAt(2);
+		b = word.charAt(2);
 		input.nextLine(); //clear scanner
 
-		System.out.println(letter);
+		System.out.println(b);
 
 		}
 
@@ -60,14 +60,14 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 
 		String word;
-		char secondLetter;
+		char c;
 
 		System.out.print("Input a word: ");
 		word = input.nextLine();
-		input.nextLine(); //clear scanner
 
-		secondLetter = word.charAt(1);
-		System.out.print("The second character user entered was: " + secondLetter);
+		c = word.charAt(1);
+		System.out.print("The second character user entered was: " + c);
+		input.nextLine(); //clear scanner
 
 	}
 
@@ -76,6 +76,17 @@ public class PracticeProblem {
 		/*Ask the user to "Input a number: ", save it as an integer. 
 		Output "Your number plus 1 is: " Followed by their number increased by one. 
 		Do not alter the variable the input was saved in. */
+
+		Scanner input = new Scanner(System.in);
+
+		int number;
+		System.out.print("Input a number: ");
+		number = input.nextInt();
+		System.out.println("Your number plus 1 is: " + (number + 1));
+	
+		input.nextLine(); //clear scanner
+
+
 	}
 
 	public static void q5() {
@@ -85,6 +96,29 @@ public class PracticeProblem {
 	 	Ask the user to "Input another letter: ", save it as a string, then save it as a character.
 	 	Output the result of the characters _added_ together (not concatenated).
 	*/
+
+		Scanner input = new Scanner(System.in);
+
+		String letter;
+		System.out.print("Input a letter: ");
+		letter = input.nextLine();
+		input.nextLine(); //clear scanner
+
+		
+		char d;
+		d = letter.charAt( 0);
+
+		String anotherLetter;
+		System.out.print("Input another letter: ");
+		anotherLetter = input.nextLine();
+		
+		char e;
+		e = anotherLetter.charAt(0);
+
+		System.out.print(d + e);
+		input.nextLine(); //clear scanner
+
+
 
 	 }
 
