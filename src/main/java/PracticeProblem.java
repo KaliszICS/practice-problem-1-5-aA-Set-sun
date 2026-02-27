@@ -35,17 +35,13 @@ public class PracticeProblem {
 
 		Scanner input = new Scanner(System.in);
 		
-		char b; 
-		String word;
-		
 
 		System.out.print("Input a word: ");
-		word = input.nextLine();
+		String word = input.nextLine();
 		//word
 		//0123 (REMEMBER IT STARTS AT 0)
 
-		b = word.charAt(2);
-		input.nextLine(); //clear scanner
+		char b = word.charAt(2);
 
 		System.out.println(b);
 
@@ -66,8 +62,7 @@ public class PracticeProblem {
 		word = input.nextLine();
 
 		c = word.charAt(1);
-		System.out.print("The second character user entered was: " + c);
-		input.nextLine(); //clear scanner
+		System.out.println("The second character user entered was: " + c);
 
 	}
 
@@ -102,8 +97,6 @@ public class PracticeProblem {
 		String letter;
 		System.out.print("Input a letter: ");
 		letter = input.nextLine();
-		input.nextLine(); //clear scanner
-
 		
 		char d;
 		d = letter.charAt( 0);
@@ -115,9 +108,7 @@ public class PracticeProblem {
 		char e;
 		e = anotherLetter.charAt(0);
 
-		System.out.print(d + e);
-		input.nextLine(); //clear scanner
-
+		System.out.println(d + e);
 
 
 	 }
